@@ -1,4 +1,5 @@
 import { fastify } from 'fastify';
+import { client } from './db/connection.ts';
 
 import {
 	serializerCompiler,
@@ -21,6 +22,4 @@ app.get('/health', () => {
 	return { status: 'ok' };
 });
 
-app.listen({ port: env.PORT }).then(() => {
-	console.log(`HTTP server running on port ${env.PORT}`);
-});
+app.listen({ port: env.PORT })
