@@ -8,6 +8,13 @@
       "when": 1757466891968,
       "tag": "0000_flat_captain_universe",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1759069371944,
+      "tag": "0001_same_tattoo",
+      "breakpoints": true
     }
   ]
 }

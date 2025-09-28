@@ -44,11 +44,31 @@ Servidor backend para gerenciamento de salas e agentes, utilizando Node.js, Type
    ```
 4. Configure as variáveis de ambiente em `src/env.ts` conforme necessário.
 
+### Configuração do Banco de Dados
+
+1. Execute as migrações do banco de dados:
+
+   ```sh
+   npm run drizzle:push
+   ```
+
+2. (Opcional) Execute o seed para dados iniciais:
+   ```sh
+   npm run seed
+   ```
+
 ### Executando o servidor
 
 ```sh
 npm run dev
 ```
+
+## Scripts Disponíveis
+
+- `npm run dev`: Inicia o servidor em modo desenvolvimento
+- `npm run drizzle:push`: Aplica as migrações no banco de dados
+- `npm run seed`: Popula o banco com dados iniciais
+- `npm run drizzle:studio`: Abre o Drizzle Studio para visualização do banco de dados
 
 ## Observações
 
